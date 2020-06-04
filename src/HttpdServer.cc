@@ -509,14 +509,13 @@ void HttpdServer::sendResponse(int new_fd, std::string path, bool closeConnectio
 
 
 int HttpdServer::sendall(int new_fd, std::string sendString, int len) {
-  char * sendStringPointer = new char[sendString.length()];
-  std::copy(sendString.begin(), sendString.end(), sendStringPointer);
-  int total = 0;          // how many bytes we've sent
-  int bytesleft = len;   // how many we have left to send
-  int n;
+	char * sendStringPointer = new char[sendString.length()];
+	std::copy(sendString.begin(), sendString.end(), sendStringPointer);
+	int total = 0;          // how many bytes we've sent
+	int bytesleft = len;   // how many we have left to send
+	int n;
 
-	while(total < len) 
-	{
+	while(total < len) {
 		n = send(new_fd, sendStringPointer+total, bytesleft, 0);
 		if (n == -1) { break; }
 		total += n;
