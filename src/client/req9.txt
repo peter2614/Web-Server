@@ -1,0 +1,16 @@
+GET /../index.html HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v1.0
+OtherKey: 123
+
+GET /../sample_htdocs/subdir1/../index.html HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v1.0
+OtherKey: 123
+
+GET /../sample_htdocs/subdir1/../index2.html HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v1.0
+OtherKey: 123
+Connection: close
+

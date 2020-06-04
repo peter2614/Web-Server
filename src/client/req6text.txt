@@ -1,0 +1,7 @@
+Get /index.html HTTP/1.1
+Host: aph-client
+
+Get / HTTP/1.1
+Host: aph-client
+Connection: close
+

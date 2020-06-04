@@ -1,0 +1,5 @@
+Get /kitten2.jpg HTTP/1.1
+Host: aph-client v1.0
+some-key: value
+Connection: close
+

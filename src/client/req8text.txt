@@ -1,0 +1,5 @@
+GET /index.html HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v1.0
+OtherKey: 123
+

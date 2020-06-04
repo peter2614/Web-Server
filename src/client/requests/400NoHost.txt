@@ -1,0 +1,4 @@
+Get / HTTP/1.1
+Some-key: missing the host
+Connection: close
+

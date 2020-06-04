@@ -1,0 +1,31 @@
+GET malformed-missing-/-.png HTTP/1.1
+ okay: extra-space-beginning
+malformed no-colon
+okay: extra-space-after 
+ okay: extraspacebeggining
+okay: extraspaceafter 
+
+GET /malformed-extra-space-after.html HTTP/1.1 
+okay:  extra-space-middle
+malformed:key: extra-colon
+malformed:no-space
+okay: normal
+
+GET /good.html HTTP/1.1
+
+GET /../../subdir1/../good.html HTTP/1.1
+
+GET / HTTP/1.1
+initial-line: is-good
+
+ GET /extra-space-beginning.html HTTP/1.1
+
+GET /extra-space-after.html HTTP/1.1 
+
+GET  /extra-space-middle.html HTTP/1.1
+
+GET /extra-space-middle.html  HTTP/1.1
+
+/missing-GET.html HTTP/1.1
+
+

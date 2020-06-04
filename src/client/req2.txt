@@ -1,0 +1,10 @@
+GET / HTTP/1.1
+goodkeywithextraspace:  www.cs.ucsd.ed
+User-Agent: MyTester v1.0
+Cookie: 123
+
+GET /image.png HTTP/1.1
+Host: www.cs.ucsd.ed
+malformedKey MyTester v1.0
+Cookie: 345323
+

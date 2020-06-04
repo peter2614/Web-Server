@@ -1,0 +1,12 @@
+GET /index.html HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v1.0
+OtherKey: 123
+
+GET /kitten.jpg HTTP/1.1
+Host: aph-client
+User-Agent: clientTester v2.0
+OtherKey: 123
+Connection: close
+
+
